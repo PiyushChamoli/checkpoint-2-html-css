@@ -64,6 +64,9 @@ table {
     justify-content: space-between;
     align-items: center;
 }
+html{
+    scroll-behavior: smooth;
+}
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -100,7 +103,6 @@ body{
     linear-gradient(to bottom, rgba(0,0,0, 0.45), rgba(0,0,0,0.45)),
     url('/home/piyush/Documents/checkpoint-2-html-css/media/images/banner.jpg');
     background-size: cover;
-    position: relative;
     height: 100vh;
 }
 .hero-nav{
@@ -113,18 +115,29 @@ body{
     font-size: 32px;
     color: white;
 }
+header{
+    position: sticky;
+    top: 0;
+}
 .header{
     background-color: white;
+    
 }
 .header .brand img{
-    height: 100%;
-    object-fit: cover;
+    width: 90px;
+    height: 90px;
 }
-.header .brand span{
-    display: inline-block;
+.header .brand{
     text-decoration: none;
-    font-size: 20px;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 600;
     color: red;
+    display: flex;
+    align-items: center;
+}
+ .header .brand span{
+    margin-left: 10px;
 }
 .header .nav-bar a{
     text-decoration: none;
@@ -134,24 +147,21 @@ body{
     color: #444444;
 }
 .hero-heading{
-    position: absolute;
-    right: 35%;
-    bottom: 15%;
     text-align: center;
+    padding-top: 200px;
 }
 .hero-heading h1{
     font-size: 40px;
     color: white;
     text-transform: uppercase;
-    border-bottom: 2px solid white;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
     font-weight: 700;
 }
 .hero-heading p{
     font-size: 16px;
     color: white;
     text-transform: uppercase;
-    font-weight: 600;
-    padding: 15px 0;
 }
 .hero-heading a{
     display: inline-block;
@@ -162,8 +172,7 @@ body{
     color: white;
     background-color: #ea513e;
     padding: 12px 22px;
-    margin: 16px 0;
-    padding: 12px 22px;
+    margin: 40px 0;
     border-radius: 5px;
 }
 
@@ -180,6 +189,10 @@ body{
     color: white;
 }
 .services-image i{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
     font-size: 50px;
 
 }
@@ -319,4 +332,96 @@ body{
     font-weight: 600;
     color: white;
     padding: 15px 22px;
+}
+
+/*Gallery Page*/
+
+/*Aside Section*/
+.aside-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+.h-100{
+    height: 100%;
+}
+.aside{
+    background-color: #ea513e;
+    padding: 25px;
+    height: 100vh;
+    width: 32%;
+    position: fixed;
+}
+.aside .brand a{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.aside .brand img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.aside .home a{
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px;
+    border: 2px solid white;
+}
+.aside-bottom{
+    margin-top: auto;
+}
+.aside-bottom h2{
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 10px;
+}
+.aside-bottom p{
+    font-size: 14px;
+}
+.aside-bottom .hero-nav{
+    text-align: left;
+    padding: 15px 0;
+}
+.aside-bottom .hero-nav a{
+    margin-right: 15px;
+}
+.aside> .flex{
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gallery{
+    display: flex;
+    width: 60%;
+    margin-left: 35%;
+}
+.gallery-heading h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 700;
+    align-self: flex-start;
+}
+.main{
+    display: flex;
+}
+.gallery-col{
+    flex: 1;
+}
+.gallery-images{
+    
+    display: flex;
+
+}
+.gallery-col > img{
+    width: 90%;
+    margin: 3%;
+    border: 2px solid black;
+    border-radius: 5px;
 }
