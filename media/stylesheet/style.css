@@ -64,9 +64,6 @@ table {
     justify-content: space-between;
     align-items: center;
 }
-html{
-    scroll-behavior: smooth;
-}
 body{
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
@@ -353,17 +350,22 @@ header{
     width: 32%;
     position: fixed;
 }
-.aside .brand a{
+.aside .brand img{
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+}
+.aside .brand{
+    display: flex;
+    align-content: center;
     text-decoration: none;
     color: white;
     font-size: 25px;
     text-transform: uppercase;
     font-weight: 600;
 }
-.aside .brand img{
-    width: 60px;
-    height: 60px;
-    object-fit: cover;
+.aside .brand span{
+    align-self: center;
 }
 .aside .home a{
     text-decoration: none;
@@ -396,7 +398,6 @@ header{
     flex-direction: column;
     justify-content: space-between;
 }
-
 .gallery{
     display: flex;
     width: 60%;
@@ -415,9 +416,7 @@ header{
     flex: 1;
 }
 .gallery-images{
-    
     display: flex;
-
 }
 .gallery-col > img{
     width: 90%;
