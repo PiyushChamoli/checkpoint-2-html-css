@@ -125,7 +125,7 @@ header{
 .hero-section{
     background-image:
     linear-gradient(to bottom, rgba(0,0,0, 0.45), rgba(0,0,0,0.45)),
-    url('/home/piyush/Documents/checkpoint-2-html-css/media/images/banner.jpg');
+    url('banner.jpg');
     background-size: cover;
     height: 100vh;
 }
